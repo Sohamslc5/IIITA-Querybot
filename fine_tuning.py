@@ -79,25 +79,6 @@ print("Model Saved Locally")
 tokenizer.save_pretrained(new_model)
 print("Tokenizer Saved Locally")
 
-#trainer.save_model("model")
-#tokenizer.save_model("model")
-print("train() function output")
-#print(trained)
-print("ended")
-
-print("evaluate() function output")
-#evaluated = trainer.evaluate(eval_dataset = dataset)
-#print(evaluated)
-print("ended")
-
-
-print("predicted() function output")
-#predictions = trainer.predict(test_dataset = dataset)
-#print(predictions)
-print("ended")
-
-#trainer.save_model("model")
-
 print("Execution done")
 
 
