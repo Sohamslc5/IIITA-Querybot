@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#message-container {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    height: 520px;
+}
+
+#input-container {
+    width: 100%;
+    display: flex;
+    background-color: #f0f0f0;
+    /* padding: 10px; */
+}
+
+#message-input {
+    flex-grow: 1;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    height: 50px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+button#send-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button#send-button:hover {
+    background-color: darkblue;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #666;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.message-bubble {
+    display: flex;
+    align-items: center; /* Aligns items vertically center */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 18px; /* Rounded corners for the bubble */
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+.message-icon {
+    width: 40px; /* Icon size */
+    height: 40px; /* Icon size */
+    margin-left: 10px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.message-text {
+    color: #333; /* Dark text for readability */
+    font-size: 16px; /* Appropriate text size */
+    overflow-wrap: break-word; /* Ensures text wraps within bubble */
+}
+
+/* Specific styles for user and bot messages if needed */
+.message-bubble.you {
+    background-color: #e0e0ff; /* Different background color for user */
+    justify-content: flex-end; /* Aligns bubble to right */
+}
+
+.message-bubble.bot {
+    background-color: #fff; /* White background for bot */
+    justify-content: flex-start; /* Aligns bubble to left */
+}
